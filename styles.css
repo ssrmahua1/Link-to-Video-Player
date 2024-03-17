@@ -1,0 +1,55 @@
+#video-player {
+    margin: 20px auto;
+    width: 640px;
+    text-align: center;
+    border: 5px solid rgba(255, 255, 255, 0.5); /* White glowing border */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* White glowing effect */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+}
+
+video {
+    width: 100%;
+    max-width: 640px;
+}
+#video-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.control-button {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.control-button img {
+    width: 24px; /* Adjust size of icon */
+    height: 24px; /* Adjust size of icon */
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px; /* Adjust the value to control the roundness */
+    background-color: #ffcccc; /* Light red color */
+    color: #fff; /* White text color */
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none; /* Remove focus outline */
+}
+
+button:hover {
+    background-color: black; /* Darker red color on hover */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px; /* Adjust spacing from top */
+    color: #fff; /* White text color */
+}
