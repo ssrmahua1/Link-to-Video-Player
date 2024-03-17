@@ -58,26 +58,7 @@ video.addEventListener('touchend', function(event) {
     }
     lastTap = currentTime;
 });
-// Toggle fullscreen
-function toggleFullScreen() {
-    if (!document.fullscreenElement && !document.webkitFullscreenElement &&
-        !document.mozFullScreenElement && !document.msFullscreenElement) {
-        if (video.requestFullscreen) {
-            video.requestFullscreen();
-        } else if (video.mozRequestFullScreen) {
-            video.mozRequestFullScreen();
-        } else if (video.webkitRequestFullscreen) {
-            video.webkitRequestFullscreen();
-        }
-    } else {
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        } else if (document.mozCancelFullScreen) {
-            document.mozCancelFullScreen();
-        } else if (document.webkitExitFullscreen) {
-            document.webkitExitFullscreen();
-        }
-    }
+
 }
 function backward() {
     video.currentTime -= 10;
