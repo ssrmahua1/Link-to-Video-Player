@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="https://w7.pngwing.com/pngs/995/63/png-transparent-video-player-computer-icons-logo-streamer-miscellaneous-angle-text.png">
 </head>
-<body style="background-color: black;">
+<body style="background-color: #17D80E;">
     <h1><a href="#video-player" style="color: #fff; text-decoration: none;">Link to Video Player</a></h1>
     <div id="video-player">
         <input type="text" id="video-url" placeholder="Paste video URL here">
         <button onclick="loadVideo()">Load Video</button>
         <button onclick="downloadVideo()">Download Video</button>
         <br>
-        <div id="controls">
+        <div class="video-container">
             <video id="myVideo" controls oncontextmenu="return false" controlsList="nodownload">
                 Your browser does not support the video tag.
             </video>
-            <button id="backward" onclick="backward()">-10s</button>
-            <button id="forward" onclick="forward()">+10s</button>
+            <div class="controls">
+                <button class="backward" onclick="backward()">Backward</button>
+                <button class="forward" onclick="forward()">Forward</button>
+            </div>
         </div>
     </div>
 
